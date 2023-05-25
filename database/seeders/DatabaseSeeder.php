@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\User;
+use App\Models\Product;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -17,6 +19,13 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
+        // ]);
+
+        // Product::factory(10)->create([
+        //     'name' => $this->faker->word,
+        //     'price' => $this->faker->randomFloat(2, 10, 100),
+        //     'description' => $this->faker->sentence,
+        //     'image_url' => $this->faker->imageUrl(200, 200, 'product'),
         // ]);
     }
 }
