@@ -4,7 +4,7 @@
 
 <h2>Create Product</h2>
 
-<form action="" method="post">
+<form action="/products" method="post">
     @csrf
   <label for="name">Product Name:</label><br>
   <input type="text" id="name" name="name"><br>
@@ -16,8 +16,10 @@
   <input type="text" id="price" name="price"><br>
 
   <label>Image Url:</label><br>
+  <p>input by link</p>
   <input type="text" name="image_url"><br>
-
+  {{-- <p>input by file local</p> --}}
+  {{-- <input type="file" id="image_url" name="image_url"><br> --}}
 
   <input type="submit" value="Submit">
 </form> 

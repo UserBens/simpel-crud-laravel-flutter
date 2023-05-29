@@ -31,14 +31,17 @@
             <th>Name</th>
             <th>Description</th>
             <th>Price</th>
-            <th>Image URL</th>
+            {{-- <th>Image URL</th> --}}
         </tr>
         @foreach($products as $product)
         <tr>
             <td>{{ $product->name }}</td>
             <td>{{ $product->description }}</td>
             <td>{{ $product->price }}</td>
-            <td>{{ $product->image_url }}</td>
+            {{-- <td>{{ $product->image_url }}</td> --}}
+            <td>
+                <a href="/products/{{ $product->id }}/edit">edit data</a>
+            </td>
         </tr>
         @endforeach
     </table>
